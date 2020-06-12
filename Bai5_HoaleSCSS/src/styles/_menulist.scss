@@ -1,0 +1,52 @@
+.menu-list {
+  @include position(fixed, "", 0, "", "", 15, white);
+  height: 100%;
+  display: none;
+  overflow: auto;
+  @include Responsive(zero) {
+    width: 90vw;
+    padding: 5vw;
+  }
+  @include Responsive(XS) {
+    width: 350px;
+    padding: 30px;
+  }
+  nav {
+    @include display-flex("", "", space-between, center);
+  }
+  .list {
+    @include Responsive(zero) {
+      display: block;
+    }
+    @include Responsive(XL) {
+      display: none;
+    }
+  }
+  .menu-box {
+    padding: 45px;
+    margin: 40px 0px;
+    .avt-gemma {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .menu-photo {
+      @include display-flex("", wrap, space-between, "");
+      img {
+        width: 33%;
+        height: 75px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+}
+.over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 16, 16, 0.678);
+  z-index: 10;
+  display: none;
+}

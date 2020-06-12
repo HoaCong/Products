@@ -1,0 +1,53 @@
+.size {
+  font-size: 50px;
+}
+.line-b {
+  border-bottom: 2px solid rebeccapurple;
+  width: 50px;
+  padding: 0;
+  margin: auto;
+}
+.line-b-f {
+  border-bottom: 1px solid silver;
+}
+.mt-1 {
+  margin-top: 50px;
+}
+.read-more {
+  padding: 0 5px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  max-width: max-content;
+  margin: 30px auto;
+}
+.read-more:hover {
+  color: rebeccapurple;
+}
+.font-1 {
+  font-family: "Montserrat", sans-serif;
+}
+.font-2 {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 30px;
+}
+.font-3 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.font-4 {
+  font-family: "Lora", serif;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .size {
+    font-size: 32px;
+  }
+}
+@media (max-width: 739px) {
+  .size {
+    font-size: 24px;
+  }
+}

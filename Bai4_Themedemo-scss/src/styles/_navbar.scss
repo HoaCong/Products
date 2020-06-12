@@ -1,0 +1,144 @@
+.heading-1 {
+  @include position(fixed, 0, 0, "", 0, 10, #fff);
+  border-bottom: 1px solid silver;
+  width: 100%;
+}
+.navbar {
+  @include display-flex("", "", space-between, center);
+  height: 70px;
+  box-sizing: border-box;
+  .btn-menu {
+    display: none;
+    padding: 8px;
+  }
+  .nav-input {
+    display: none;
+  }
+  .search {
+    margin-left: auto;
+    input {
+      border: none;
+      height: 30px;
+      font-size: inherit;
+    }
+    button {
+      border: none;
+      background: inherit;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+@media (max-width: 739px) {
+  .navbar {
+    position: fixed;
+    background: #fff;
+    border-bottom: 1px solid silver;
+    padding: 0 16px;
+    z-index: 10;
+    .btn-menu {
+      display: block;
+      font-size: 20px;
+    }
+    .nav-input:checked ~ ul.menu {
+      transform: translateY(0);
+      // opacity: 1;
+    }
+    ul.menu {
+      @include position(absolute, 70px, 0, "", 0, 5, #fff);
+      width: 100%;
+      list-style: none;
+      padding: 0 16px;
+      margin: 0;
+      // opacity: 0;
+      // transform: translateX(-100%);
+      transform: translateY(calc(-100% - 70px));
+      // transition: transform linear 0.2s, opacity linear 0.25s;
+      li:hover {
+        a {
+          color: rebeccapurple;
+        }
+        ul.chil {
+          a {
+            color: black;
+          }
+        }
+      }
+      li {
+        padding: 8px 0;
+        .active {
+          color: rebeccapurple;
+        }
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: black;
+          i {
+            display: none;
+          }
+        }
+        ul.chil {
+          list-style: none;
+          margin-top: 8px;
+          a {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 740px) {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li:hover {
+      a {
+        color: rebeccapurple;
+      }
+      ul.chil {
+        display: block;
+        a {
+          color: black;
+          font-weight: normal;
+        }
+      }
+    }
+    li {
+      float: left;
+      box-sizing: border-box;
+      padding: 26px 20px 26px 0;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+      }
+      .active {
+        color: rebeccapurple;
+      }
+      ul.chil {
+        display: none;
+        top: 70px;
+        position: absolute;
+        width: max-content;
+        max-width: 230px;
+        background: #fff;
+        z-index: 5;
+        li {
+          border: 1px solid silver;
+          width: 100%;
+          padding: 8px;
+        }
+        li:hover {
+          background: rebeccapurple;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

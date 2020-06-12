@@ -1,0 +1,95 @@
+@import "declaredvalue";
+@import "mixin";
+.size {
+  margin: 10px 0;
+  @include Responsive(zero) {
+    font-size: 30px;
+  }
+  @include Responsive(SM) {
+    font-size: 40px;
+  }
+  @include Responsive(XL) {
+    font-size: 50px;
+  }
+}
+.smoke {
+  background: $smoke;
+}
+.red {
+  color: $red;
+}
+.grey {
+  background: $grey;
+  color: white;
+}
+.sunred {
+  background: $red;
+  color: $white;
+}
+.center {
+  text-align: center;
+}
+.m-buttom {
+  margin-bottom: $marginbottom;
+}
+.b-buttom {
+  border-bottom: 2px solid $red;
+  width: 20px;
+  margin: 20px auto;
+}
+.btn-arrow {
+  margin-top: 40px;
+  text-align: center;
+  i {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+.body-width {
+  margin: auto;
+  @include Responsive(zero) {
+    width: 90vw;
+  }
+  @include Responsive(XS) {
+    width: 370px;
+  }
+  @include Responsive(SM) {
+    width: 90vw;
+  }
+  @include Responsive(MD) {
+    width: 720px;
+  }
+  @include Responsive(XL) {
+    width: 90vw;
+  }
+  @include Responsive(LG) {
+    width: 1140px;
+  }
+}
+.btn-rw {
+  @include btn(10px 15px, "");
+  margin: 10px 0;
+}
+.btn-red {
+  @include btn("", "");
+}
+.network {
+  div {
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+    @include logowidth(50px, 50px, 50px, 25px, 25px);
+  }
+  .fa-facebook-f {
+    background: #5252b8;
+  }
+  .fa-linkedin-in {
+    background: #55acee;
+  }
+  .fa-google-plus-g {
+    background: tomato;
+  }
+  .fa-basketball-ball {
+    background: hotpink;
+  }
+}

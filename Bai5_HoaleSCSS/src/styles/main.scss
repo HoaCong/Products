@@ -1,0 +1,29 @@
+@import "declaredvalue";
+@import "mixin";
+@import "class";
+//menulist
+@import "menulist";
+@import "menubox";
+//nut xoay
+.setting {
+  @include position(fixed, 150px, "", "", 0, 9999999, $smoke);
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 0 8px 8px 0;
+  color: rgb(90, 88, 88);
+}
+//header
+@import "header";
+// heading 1,2
+@import "heading";
+//Latest articles
+@import "latesttopic";
+//follow
+@import "follow";
+//final
+@import "final";
+//footer
+footer {
+  border-top: 1px solid rgb(119, 118, 118);
+  padding: 25px 0;
+}

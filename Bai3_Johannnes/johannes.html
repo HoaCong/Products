@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="johannes.css">
+    <title>Johannes</title>
+</head>
+
+<body class="mobile-one" id="body-fixed">
+    <!-- menu -->
+    <div class="menu-list" id="myMenu">
+        <nav>
+            <h2 class="size red">Johannes</h2>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </nav>
+        <div class="menu-box list smoke">
+            <div class="node">Home
+                <i class="fa fa-chevron-down" onclick="down()"></i>
+            </div>
+            <ul class="hihi" id="menulearn">
+                <li><a href="#">Layouts</a><i class="fas fa-angle-right" onclick="up()"></i>
+                    <ul class="hihi con">
+                        <li><a href="#">Layout 1</a></li>
+                        <li><a href="#">Layout 2</a></li>
+                        <li><a href="#">Layout 3</a></li>
+                        <li><a href="#">Layout 4</a></li>
+                        <li><a href="#">Layout 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                Follow me:
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-google-plus-g"></i>
+
+            </div>
+        </div>
+        <div class="center menu-box smoke">
+            <img class="avt-gemma" src="img/gemma.jpg" alt="">
+            <h2>Gemma Lawson</h2>
+            <p>Originally from New York City. Sports and music enthusiast. Evil pop culture evangelist and music geek.
+                Sometimes a troublemaker.</p>
+        </div>
+        <div class="menu-box smoke">
+            <h2>Instagram</h2>
+            <div class="menu-photo">
+                <img src="img/img1.jpeg" alt="">
+                <img src="img/img2.jpeg" alt="">
+                <img src="img/img3.jpeg" alt="">
+                <img src="img/img4.jpeg" alt="">
+                <img src="img/img5.jpeg" alt="">
+                <img src="img/img6.jpeg" alt="">
+                <img src="img/img7.jpeg" alt="">
+                <img src="img/img8.jpeg" alt="">
+                <img src="img/img9.jpeg" alt="">
+            </div>
+        </div>
+        <div class="menu-box grey">
+            <h2>Please note</h2>
+            <p>This is a widgetized sidebar area and you can place any widget here, as you would with the classic
+                WordPress sidebar.</p>
+        </div>
+    </div>
+    <div class="over" id="myOver" onclick="closemenu()"></div>
+    <!-- end of menu -->
+    <header class="body-width">
+        <h2 class="size">Johannes</h2>
+        <div class="menu-layout">
+            <ul id="menu">
+                <li><a class="active" href="#">Home<i class="fas fa-angle-down"></i></a>
+                    <ul id="sub">
+                        <li><a href="#">Example 1</a></li>
+                        <li><a href="#">Example 2</a></li>
+                        <li><a href="#">Example 3</a></li>
+                        <li><a href="#">Example 4</a></li>
+                        <li><a href="#">Example 5</a></li>
+                        <li><a href="#">Example 6</a></li>
+                        <li><a href="#">Example 7</a></li>
+                        <li><a href="#">Example 8</a></li>
+                        <li><a href="#">Example 9</a></li>
+                        <li><a href="#">Example 10</a></li>
+                        <li><a href="#">Example 11</a></li>
+                        <li><a href="#">Example 12</a></li>
+                        <li><a href="#">Example 13</a></li>
+                        <li><a href="#">Example 14</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Layout<i class="fas fa-angle-down"></i></a>
+                    <ul id="sub">
+                        <li><a href="#">Featured layouts</a></li>
+                        <li><a href="#">Classic layouts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Archives<i class="fas fa-angle-down"></i></a>
+                    <ul id="sub" class="cha">
+                        <li><a href="#">Category</i></a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Layout 1</a></li>
+                                <li><a href="#">Layout 2</a></li>
+                                <li><a href="#">Layout 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tag</a></li>
+                        <li><a href="#">Author</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Posts<i class="fas fa-angle-down"></i></a>
+                    <ul id="sub" class="cha">
+                        <li><a href="#">Layouts</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Layout 1</a></li>
+                                <li><a href="#">Layout 2</a></li>
+                                <li><a href="#">Layout 3</a></li>
+                                <li><a href="#">Layout 4</a></li>
+                                <li><a href="#">Layout 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sidebar</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Right sidebar</a></li>
+                                <li><a href="#">Left sidebar</a></li>
+                                <li><a href="#">No sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Formats</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Galery</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">Audio</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Content width</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Narrow</a></li>
+                                <li><a href="#">Medium</a></li>
+                                <li><a href="#">Wide</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Multiple authors</a></li>
+                        <li><a href="#">More</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Paginated post</a></li>
+                                <li><a href="#">Post with comments</a></li>
+                                <li><a href="#">Vimeo Video</a></li>
+                                <li><a href="#">Built-in video</a></li>
+                                <li><a href="#">Facebook embed</a></li>
+                                <li><a href="#">Twitter embed</a></li>
+                                <li><a href="#">Twitter embed</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Pages<i class="fas fa-angle-down"></i></a>
+                    <ul id="sub" class="cha">
+                        <li><a href="#">Layouts</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Layout 1</a></li>
+                                <li><a href="#">Layout 2</a></li>
+                                <li><a href="#">Layout 3</a></li>
+                                <li><a href="#">Layout 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sidebar</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Right sidebar</a></li>
+                                <li><a href="#">Left sidebar</a></li>
+                                <li><a href="#">No sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Content width</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Narrow</a></li>
+                                <li><a href="#">Medium</a></li>
+                                <li><a href="#">Wide</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Authors template</a></li>
+                        <li><a href="#">Plank page</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Features<i class="fas fa-angle-down"></i></a>
+                    <ul id="sub" class="cha">
+                        <li><a href="#">Blocks</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Example</a></li>
+                                <li><a href="#">Common blocks</a></li>
+                                <li><a href="#">Formating blocks</a></li>
+                                <li><a href="#">Layout blocks</a></li>
+                                <li><a href="#">WooCommerce blocks</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Custom widgets</a></li>
+                        <li><a href="#">WooCommerce</a></li>
+                        <li><a href="#">Header</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Layout 1</a></li>
+                                <li><a href="#">Layout 2</a></li>
+                                <li><a href="#">Layout 3</a></li>
+                                <li><a href="#">Layout 4</a></li>
+                                <li><a href="#">Layout 5</a></li>
+                                <li><a href="#">Layout 6</a></li>
+                                <li><a href="#">Layout 7</a></li>
+                                <li><a href="#">With top bar</a></li>
+                                <li><a href="#">Special elements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mega menu</a></li>
+                        <li><a href="#">Pagination</a><i class="fas fa-angle-right"></i>
+                            <ul id="con">
+                                <li><a href="#">Numeric</a></li>
+                                <li><a href="#">Load more button</a></li>
+                                <li><a href="#">Infinite scroll</a></li>
+                                <li><a href="#">Prev / Next</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Ads example</a></li>
+                        <li><a href="#">Breadcrumbs example</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Shortcodes</a></li>
+                        <li><a href="#">404 page</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-menu" onclick="openmenu()">Menu<i class="fas fa-align-left"></i></div>
+    </header>
+    <div class="setting smoke">
+        <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <div class="mid-container">
+        <section class="heading-1 m-buttom body-width">
+            <img class="mobile-one" src="img/avatar.jpg" alt="avatar gỉrl">
+            <div>
+                <h2 class="size">Unleash your creativity</h2>
+                <p>Johannes is a theme carefully designed and developed to get the most out of the new WordPress editor.
+                    Unleash the power of blocks - an awesome new way of creating rich content in WordPress!</p>
+                <button class="btn-red">Find out more</button>
+            </div>
+        </section>
+        <section class="heading-2 m-buttom">
+            <h3 class="center size">Featured articles</h3>
+            <p class="b-buttom"></p>
+            <div class="container-slide">
+                <div class="slide-photo">
+                    <img class="photo" src="img/img1.jpeg" alt="">
+                    <img class="photo" src="img/img2.jpeg" alt="">
+                    <img class="photo" src="img/img3.jpeg" alt="">
+                    <img class="photo" src="img/img4.jpeg" alt="">
+                    <img class="photo" src="img/img5.jpeg" alt="">
+                    <img class="photo" src="img/img6.jpeg" alt="">
+                    <img class="photo" src="img/img7.jpeg" alt="">
+                    <img class="photo" src="img/img1.jpeg" alt="">
+                    <img class="photo" src="img/img2.jpeg" alt="">
+                    <img class="photo" src="img/img3.jpeg" alt="">
+                    <img class="photo" src="img/img4.jpeg" alt="">
+                    <img class="photo" src="img/img5.jpeg" alt="">
+                    <img class="photo" src="img/img6.jpeg" alt="">
+                    <img class="photo" src="img/img7.jpeg" alt="">
+                </div>
+                <div class="btn-arrow">
+                    <i class="back" onclick="plusSlides(-1)"> <i class="fas fa-arrow-left"></i></i>
+                    <i class="next" onclick="plusSlides(1)"> <i class="fas fa-arrow-right"></i></i></i>
+                </div>
+            </div>
+        </section>
+        <section class="body-width">
+            <h3 class="center size">Latest articles</h3>
+            <p class="b-buttom"></p>
+            <div class="middle m-buttom">
+                <div class="container-latest">
+                    <div class="latest">
+                        <img class="mobile-one" src="img/liamadam.jpg" alt="">
+                        <div class="content-latest">
+                            <button class="btn-red">Motivation</button>
+                            <h2 class="size">It’s ok to work in a bar while getting a degree</h2>
+                            <div class="author">by<p class="red">Liam Adams </p>
+                            </div>
+                            <p>Progressively evolve functional niches without ethical architectures. Uniquely plagiarize
+                                cost
+                                effective infomediaries vis-a-vis world-class process improvements. Monotonectally
+                                disseminate
+                                stand-alone results for virtual processes. Competently...</p>
+                        </div>
+                    </div>
+                    <div class="latest">
+                        <img class="mobile-one" src="img/gemmalawson2.jpg" alt="">
+                        <div class="content-latest">
+                            <button class="btn-red">Lifestyle</button>
+                            <h2 class="size">How to master the art of choosing the right gift</h2>
+                            <div class="author">by<p class="red">Gemma Lawson</p>
+                            </div>
+                            <p>Appropriately optimize team building manufactured products vis-a-vis leading-edge
+                                imperatives.
+                                Proactively foster high standards in data via cooperative leadership. Conveniently
+                                innovate
+                                intermandated relationships without flexible opportunities...</p>
+                        </div>
+                    </div>
+                    <div class="latest">
+                        <img class="mobile-one" src="img/gammalawson3.jpg" alt="">
+                        <div class="content-latest">
+                            <button class="btn-red">Lifestyle</button>
+                            <h2 class="size">Pretending to read while looking out the window</h2>
+                            <div class="author">by<p class="red">Gemma Lawson</p>
+                            </div>
+                            <p>Objectively disseminate parallel communities whereas premier e-business. Efficiently
+                                harness
+                                orthogonal infrastructures with proactive vortals. Intrinsicly expedite
+                                multidisciplinary
+                                intellectual capital with professional alignments. Compellingly...</p>
+                        </div>
+                    </div>
+                    <div class="latest">
+                        <img class="mobile-one" src="img/liamadam4.jpg" alt="">
+                        <div class="content-latest">
+                            <button class="btn-red">Lifestyle</button>
+                            <h2 class="size">The perfect afternoon ritual for busy people</h2>
+                            <div class="author">by<p class="red">Liam Adams </p>
+                            </div>
+                            <p>Seamlessly maximize B2B growth strategies with state of the art e-services. Efficiently
+                                streamline frictionless collaboration and idea-sharing whereas next-generation
+                                potentialities.
+                                Proactively create team driven scenarios with client-focused...</p>
+                        </div>
+                    </div>
+                    <div class="latest">
+                        <img class="mobile-one" src="img/liamadam5.jpg" alt="">
+                        <div class="content-latest">
+                            <button class="btn-red">Motivation</button>
+                            <h2 class="size">Three proven ways to start your day the right way</h2>
+                            <div class="author">by<p class="red">Liam Adams </p>
+                            </div>
+                            <p>Proactively administrate team building supply chains before virtual convergence.
+                                Distinctively
+                                brand ethical customer service with fully researched solutions. Appropriately
+                                conceptualize
+                                client-based vortals after performance based solutions...</p>
+                        </div>
+                    </div>
+                    <div class="latest m-buttom">
+                        <img class="mobile-one" src="img/jesocagarcia6.jpg" alt="">
+                        <div class="content-latest">
+                            <button class="btn-red">Fashion</button>
+                            <h2 class="size">The perfect color combination for this season</h2>
+                            <div class="author">by<p class="red"> Jessica Garcia</p>
+                            </div>
+                            <p>Competently conceptualize customized channels vis-a-vis process-centric channels. Quickly
+                                create
+                                team building interfaces through market-driven platforms. Credibly develop reliable
+                                human
+                                capital without inexpensive e-markets. Professionally matrix...</p>
+                        </div>
+                    </div>
+                    <div class="btn-page m-buttom">
+                        <button>
+                            <i class="fas fa-angle-left"></i>
+                            <p>Newer Entries</p>
+                        </button>
+                        <button class="sunred">
+                            <p>Older Entries</p> <i class="fas fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="container-topic mobile-one body-width m-buttom">
+                    <div class="topic smoke">
+                        <p class="size">Newsletter</p>
+                        <p>Make sure to subscribe to our newsletter and be the first to know the news.</p>
+                        <input type="text" placeholder="Enter your email address">
+                        <button class="btn-red sub">Subcribe</button>
+                    </div>
+                    <div class="topic smoke">
+                        <p class="size">Topics</p>
+                        <div class="page">Art <p class="count"></p>
+                            <p>9</p>
+                        </div>
+                        <div class="page">Fashion <p class="count"></p>
+                            <p>9</p>
+                        </div>
+                        <div class="page">Lifestyle <p class="count"></p>
+                            <p>15</p>
+                        </div>
+                        <div class="page">Motivation <p class="count"></p>
+                            <p>6</p>
+                        </div>
+                        <div class="page">Travel <p class="count"></p>
+                            <p>8</p>
+                        </div>
+                    </div>
+                    <div class="topic grey">
+                        <p class="size">Let’s get social</p>
+                        <p>We are a team of dedicated professionals delivering high quality WordPress themes and
+                            plugins.
+                        </p>
+                        <div class="network">
+                            <div class="fab fa-facebook-f"></div>
+                            <div class="fab fa-linkedin-in"></div>
+                            <div class="fab fa-google-plus-g"></div>
+                            <div class="fas fa-basketball-ball"></div>
+                        </div>
+                    </div>
+                    <div class="topic sunred center">
+                        <p>Try this theme</p>
+                        <p class="size">FOR FREE</p>
+                        <p class="b-buttom"></p>
+                        <p>No credit card requied and completely risk-free</p>
+                        <button>TRY IT OUT</button>
+                    </div>
+                </div>
+        </section>
+        <!-- <section class="container-follow smoke body-width m-buttom">
+            <h3 class="center size">Follow @unsplash</h3>
+            <p class="b-buttom"></p>
+            <div class="follow">
+                <div class="slide-photo">
+                    <img class="photo" src="img/img1.jpeg" alt="">
+                    <img class="photo" src="img/img2.jpeg" alt="">
+                    <img class="photo" src="img/img3.jpeg" alt="">
+                    <img class="photo" src="img/img4.jpeg" alt="">
+                    <img class="photo" src="img/img5.jpeg" alt="">
+                    <img class="photo" src="img/img6.jpeg" alt="">
+                    <img class="photo" src="img/img7.jpeg" alt="">
+                    <img class="photo" src="img/img8.jpeg" alt="">
+                    <img class="photo" src="img/img9.jpeg" alt="">
+                    <img class="photo" src="img/img10.jpeg" alt="">
+                    <img class="photo" src="img/img11.jpeg" alt="">
+                    <img class="photo" src="img/img12.jpeg" alt="">
+                    <img class="photo" src="img/img1.jpeg" alt="">
+                    <img class="photo" src="img/img2.jpeg" alt="">
+                    <img class="photo" src="img/img3.jpeg" alt="">
+                    <img class="photo" src="img/img4.jpeg" alt="">
+                    <img class="photo" src="img/img5.jpeg" alt="">
+                    <img class="photo" src="img/img6.jpeg" alt="">
+                    <img class="photo" src="img/img7.jpeg" alt="">
+                    <img class="photo" src="img/img8.jpeg" alt="">
+                    <img class="photo" src="img/img9.jpeg" alt="">
+                    <img class="photo" src="img/img10.jpeg" alt="">
+                    <img class="photo" src="img/img11.jpeg" alt="">
+                    <img class="photo" src="img/img12.jpeg" alt="">
+                </div>
+            </div>
+            <div class="btn-arrow">
+                <button class="back" onclick="plusSlides(-1)"> <i class="fas fa-arrow-left"></i></button>
+                <button class="next" onclick="plusSlides(1)"> <i class="fas fa-arrow-right"></i></i></button>
+            </div>
+        </section> -->
+        <section class="final body-width">
+            <div class="johannes m-buttom">
+                <h3 class="size">Johannes</h3>
+                <p>A multi-concept personal blog and magazine WordPress theme</p>
+                <div class="network">
+                    <div class="fab fa-facebook-f"></div>
+                    <div class="fab fa-linkedin-in"></div>
+                    <div class="fab fa-google-plus-g"></div>
+                </div>
+            </div>
+            <div class="johannes m-buttom">
+                <h3 class="size">Blocks</h3>
+                <p>Common blocks</p>
+                <p>Formating blocks</p>
+                <p>Layout blocks</p>
+            </div>
+            <div class="johannes m-buttom">
+                <h3 class="size">Features</h3>
+                <p>Shortcodes</p>
+                <p>Custom widgets</p>
+                <p>Contact</p>
+            </div>
+            <div class="johannes m-buttom">
+                <h3 class="size">What next?</h3>
+                <p>Try it for free</p>
+                <p>Pre-sale question</p>
+                <p>Purchase now!</p>
+            </div>
+
+        </section>
+        <footer class="center body-width">Created by <u>Meks</u>· Copyright 2020 · All rights reserved</footer>
+    </div>
+    <script src="johannes.js"></script>
+</body>
+
+</html

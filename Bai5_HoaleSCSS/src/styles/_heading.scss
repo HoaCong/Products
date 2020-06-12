@@ -1,0 +1,67 @@
+//heading-1
+.heading-1 {
+  @include display-flex("", wrap, center, center);
+  margin: auto;
+  margin-bottom: 50px;
+  @include Responsive(zero) {
+    width: $widthbody;
+  }
+  @include Responsive(XS) {
+    width: $widthsmall;
+  }
+  @include Responsive(SM) {
+    width: $widthbody;
+  }
+  @include Responsive(MD) {
+    width: $widthmedium;
+  }
+  @include Responsive(XL) {
+    width: $widthbody;
+  }
+  @include Responsive(LG) {
+    width: $widthdestop;
+  }
+  img {
+    border-radius: 63% 37% 50% 50%/70% 68% 32% 30%;
+    flex: 1;
+    @include Responsive(zero) {
+      width: inherit;
+    }
+    @include Responsive(SM) {
+      width: 45%;
+      padding-right: 20px;
+    }
+  }
+  div {
+    text-align: left;
+    flex: 1;
+    h2 {
+      @include Responsive(zero) {
+        font-size: $smalltitle;
+      }
+      @include Responsive(XL) {
+        font-size: $largetitle;
+      }
+    }
+  }
+}
+
+//heading-2
+.heading-2 {
+  position: relative;
+  .container-slide {
+    padding: 20px 0;
+    .slide-photo {
+      @include display-flex("", "", center, "");
+      overflow: hidden;
+      .photo {
+        @include Responsive(zero) {
+          @include width(280px, 280px, 0 20px);
+        }
+        @include Responsive(XS) {
+          @include width(345px, 345px, 0 24px);
+        }
+      }
+    }
+  }
+}

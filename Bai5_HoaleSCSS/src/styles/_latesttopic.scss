@@ -1,0 +1,83 @@
+.middle {
+  position: relative;
+  .container-topic {
+    .topic {
+      padding: 40px;
+      margin-bottom: 30px;
+      @include display-flex(column, "", "", "");
+      .page {
+        @include display-flex("", "", space-between, center);
+        .count {
+          border-bottom: 2px dotted black;
+          width: 80%;
+        }
+      }
+      input {
+        background: transparent;
+        border-color: transparent;
+        border-bottom: 2px solid lightgrey;
+        width: 100%;
+        padding: 15px 0;
+      }
+    }
+  }
+  @include Responsive(zero) {
+    .latest {
+      @include display-flex(column, "", "", "");
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @include Responsive(SM) {
+    .content-latest {
+      padding: 20px 10%;
+    }
+    .container-topic {
+      @include display-flex("", wrap, space-between, "");
+      width: 100%;
+      .topic {
+        width: 35%;
+      }
+    }
+  }
+  @include Responsive(XL) {
+    @include display-flex("", "", center, flex-start);
+    .container-latest {
+      width: 65%;
+      padding: 0 15px;
+    }
+    .container-topic {
+      width: 35%;
+      padding: 0 15px;
+      .topic {
+        width: 100%;
+      }
+    }
+  }
+  .author {
+    @include display-flex("", "", "", center);
+    p {
+      margin: 0 5px;
+      color: $red;
+    }
+  }
+  .btn-page {
+    @include display-flex("", "", space-between, center);
+    button {
+      @include display-flex("", "", inherit, inherit);
+      padding: 0 30px;
+      border: none;
+      i {
+        width: 30px;
+        font-size: 25px;
+        margin: 0;
+      }
+    }
+    @include Responsive(XL) {
+      @include position(absolute, "", "", 0px, 0px, "", "");
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+header {
+  @include display-flex("", "", space-between, center);
+  // @include position-fixed(0, "", "", 50%, 2, $smoke);
+  // width: 1140px;
+  // padding: 50px 0;
+  // transform: translateX(-50%);
+  margin: auto;
+  padding: 10px 0;
+  @include Responsive(MD) {
+    width: 720px;
+    padding: 15px 0;
+  }
+  @include Responsive(XL) {
+    width: 90vw;
+    padding: 20px 0;
+  }
+  @include Responsive(LG) {
+    width: 1140px;
+    padding: 30px 0;
+  }
+  h2 {
+    color: $red;
+    margin: 0;
+  }
+  i {
+    padding: 8px;
+  }
+  .btn-menu:hover {
+    @extend h2;
+  }
+}
+
+.menu-layout {
+  @include display-flex("", "", space-between, center);
+  margin-left: auto;
+  display: none;
+  @include Responsive(XL) {
+    display: block;
+  }
+}
+ul#menu {
+  @extend %ulmenu;
+  li:hover {
+    ul#sub {
+      display: block;
+    }
+  }
+  li {
+    @extend %li1;
+    a {
+      @extend %a;
+    }
+    .active {
+      color: $red;
+    }
+    a:hover {
+      @extend .active;
+    }
+    ul#sub {
+      @extend %ulsub;
+      @extend ul#menu;
+      li {
+        @extend %li2;
+      }
+    }
+  }
+}
+.cha {
+  li:hover {
+    color: $red;
+    ul#con {
+      display: block;
+      @include Responsive(XL) {
+        transform: translateX(-100%);
+      }
+      @include Responsive(LG) {
+        transform: translateX(90%);
+      }
+    }
+  }
+  li {
+    @extend %li1;
+    a {
+      @extend %a;
+    }
+    ul#con {
+      @extend %ulsub;
+      @extend ul#menu;
+      li {
+        @extend %li2;
+      }
+    }
+  }
+}
+%li1 {
+  position: relative;
+  list-style-type: none;
+  float: left; /* code này để menu dàn hàng ngang*/
+  margin-right: 10px;
+}
+%li2 {
+  @include width(180px, "", 10px);
+  @include display-flex("", "", space-between, "");
+}
+%ulsub {
+  display: none;
+  position: absolute;
+  @include width(200px, "", 10px);
+  background: $white;
+  animation: menulayout 1s ease-in;
+}
+%ulmenu {
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+%a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+@keyframes menulayout {
+  0% {
+    top: 200px;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}

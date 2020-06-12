@@ -1,0 +1,15 @@
+@import "grid";
+@import "class";
+@import "mixin";
+@import "navbar";
+@import "activello";
+@import "blogitem";
+
+.footer {
+  background: rgb(211, 209, 209);
+  text-align: center;
+  p {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,281 @@
+body{
+    background: cadetblue;
+}
+.khung{
+    width: 360px;
+    background-color: whitesmoke;
+    margin: auto;
+    position: relative;
+}
+.center{
+    text-align: center;
+}
+.fuzzy{
+    opacity: 0.7;
+}
+/* phần đầu */
+.header{
+    background-color: blanchedalmond;
+    padding: 16px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+}
+.head {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+.fa-bars , .fa-times {
+    font-size: 20px;
+}
+.header > h3 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+.header > input {
+    width: 89%;
+    padding: 5%;
+
+}
+.header > button {
+    background-color: seagreen;
+    width: 100% ;
+    color: seashell;
+    padding: 5%;
+    margin: 5px 0;
+}
+.content{
+    font-size: small;
+}
+.pic-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    align-items: center;
+}
+.pic-nav > img{
+    margin: 5px;
+    border-radius: 5px;
+    flex: 1;
+}
+/* kết thúc phần đầu */
+.title {
+    width: 81%;
+    margin: auto;
+    padding: 40px 0;
+}
+/* phan gioi thieu */
+.service{
+    padding: 16px;
+}
+.service > div{
+    margin: 40px 0;
+}
+.green{
+    color: forestgreen;
+}
+.service > div > img {
+    width: 100%;
+}
+.stacks{
+    text-align: center;
+    position: relative;
+}
+.one,.three{
+    position: absolute;
+}
+.one{
+    width: 30%;
+    left: 0%;
+    top: 0%;
+}
+.three{
+    width: 40%;
+    bottom: 0%;
+    right: 0%;
+}
+.two{
+    width: 60%;
+    padding: 8% 0;
+}
+.slide > img{
+    width: 100%;
+    height: 200px;
+}
+.slide{
+    margin-bottom: 55px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back,.next{
+    position: absolute;
+    font-size: 16px;
+    width: 20px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.back{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.myPicture{
+    display: none;
+}
+/* endgioithieu */
+
+.help{
+    padding: 16px;
+    margin: 50px 0;
+}
+
+.startup{
+    padding: 16px;
+    margin-bottom: 60px;
+}
+.startup > img{
+    width: 100%;
+}
+.footer{
+    padding: 16px;
+}
+.footer > .top {
+    background-color: darkgreen;
+    color: white;
+    padding-bottom: 30px;
+}
+.top > .avatar{
+    width: 100%;
+    padding: 0;
+}
+.top > h3,.top > p{
+    padding: 5% 14%;
+}
+.footer > .top > button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 5px;
+}
+.footer > .top > button > i {
+    padding: 20px;
+    font-size: 16px;
+    flex: 0;
+}
+.footer > .top > button > p {
+    flex: 1;
+}
+.mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.mid > img{
+    margin: 16px;
+}
+.bot{
+    margin: 80px 0 20px 0;
+}
+.bot > button{
+    padding: 10px;
+    width: 50%;
+    font-size: 18px;
+    color: white;
+    background-color: darkgreen;
+}
+
+/* menu */
+.menu{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background: white;
+    padding: 0 16px;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+.menu > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 16px 0;
+}
+.buttom{
+    border-bottom: 1px solid black;
+    padding:20px 0;
+}
+.menu > div > .login{
+    justify-content: center;
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+}
+.menu > div > button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 5px 0;
+    background-color: white;
+}
+.menu > div > button > i{
+    font-size: 14px;
+    opacity: 0.8;
+}
+.btn-help > .squad{
+    display: flex;
+    justify-content: left;
+}
+.squad > .fa-caret-right {
+    font-size: 20px;
+    padding: 8px;
+    transform: rotate(-45deg) translate(0px, -5px);
+}
+#up,#menulearn{
+    display: none;
+}
+
+ul{
+    border-left: 1px solid black;
+    padding: 16px;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 16px;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+}
+.over{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background: rgba(41, 37, 37, 0.212);
+    z-index: 1;
+    display: none;
+}
+/* end of menu */

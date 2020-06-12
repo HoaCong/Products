@@ -1,0 +1,62 @@
+@mixin position($name, $top, $right, $buttom, $left, $index, $color) {
+  position: $name;
+  top: $top;
+  right: $right;
+  bottom: $buttom;
+  left: $left;
+  z-index: $index;
+  background: $color;
+}
+@mixin display-flex($column, $wrap, $justify, $align) {
+  display: flex;
+  flex-direction: $column;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin width($width, $height, $padding) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+}
+@mixin btn($pd, $fs) {
+  background: $red;
+  color: $white;
+  border: none;
+  padding: $pd;
+  font-size: $fs;
+}
+@mixin Responsive($view) {
+  @if $view == zero {
+    @media only screen and (min-width: $zero) {
+      @content;
+    }
+  } @else if $view == XS {
+    @media only screen and (min-width: $XS) {
+      @content;
+    }
+  } @else if $view == SM {
+    @media only screen and (min-width: $SM) {
+      @content;
+    }
+  } @else if $view == MD {
+    @media only screen and (min-width: $MD) {
+      @content;
+    }
+  } @else if $view == XL {
+    @media only screen and (min-width: $XL) {
+      @content;
+    }
+  } @else if $view == LG {
+    @media only screen and (min-width: $LG) {
+      @content;
+    }
+  }
+}
+@mixin logowidth($w, $h, $lh, $br, $fs) {
+  width: $w;
+  height: $h;
+  line-height: $lh;
+  border-radius: $br;
+  font-size: $fs;
+}

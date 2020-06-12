@@ -1,0 +1,110 @@
+.posts {
+  display: none;
+  .blog-item-one {
+    margin-top: 50px;
+    header {
+      text-align: center;
+    }
+    h1:hover,
+    h2:hover {
+      color: rebeccapurple;
+    }
+    h2 {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 28px;
+    }
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 1px;
+      font-size: 12px;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+.btn-post {
+  display: flex;
+  justify-content: space-between;
+  .back {
+    margin-left: auto;
+  }
+}
+.hai {
+  background: aqua;
+}
+.ba {
+  background: pink;
+}
+.blog-item-two {
+  margin-top: 50px;
+  .line-b {
+    float: left;
+  }
+  img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .recent-post {
+    display: flex;
+    margin-top: 20px;
+    img {
+      width: 80px;
+      height: 80px;
+      margin: 0 20px 0 0;
+    }
+  }
+  .search {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    input {
+      height: 30px;
+      font-size: 16px;
+      flex: 1;
+    }
+    button:hover {
+      background: rebeccapurple;
+      color: #fff;
+    }
+    button {
+      width: 80px;
+      height: 30px;
+      background: rgb(232, 235, 235);
+      border: none;
+      border-radius: 2px;
+    }
+  }
+  .listpost {
+    @include display-flex("", "", space-between, center);
+  }
+}
+.listapp {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  margin: 50px auto;
+  width: 250px;
+  i:hover {
+    color: rebeccapurple;
+  }
+  i {
+    opacity: 0.7;
+  }
+}
+@media (max-width: 739px) {
+  .blog-item-one,
+  .blog-item-two,
+  .btn-post {
+    padding: 0 16px;
+  }
+}
+@media (min-width: 739px) {
+  .hidden-mobile {
+    display: none;
+  }
+}

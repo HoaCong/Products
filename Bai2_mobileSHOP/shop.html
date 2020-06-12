@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>shopify</title>
+</head>
+
+<body>
+    <div class="khung">
+        <!-- menu -->
+        <div class="menu" id="myMenu">
+            <nav>
+                <img src="img/shopify.png" width="30px" />
+                <i class="head">shopify</i>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </nav>
+            <div class="btn-service buttom">
+                <button>Start<i class="fas fa-chevron-down"></i></button>
+                <button>Sell<i class="fas fa-chevron-down"></i></button>
+                <button>Market<i class="fas fa-chevron-down"></i></button>
+                <button>Manage<i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="btn-login buttom">
+                <button>Pricing</button>
+                <button>Learn
+                    <i class="fas fa-chevron-down" id="down" onclick="down()"></i>
+                    <i class="fas fa-chevron-up" id="up" onclick="up()"></i>
+                </button>
+                <ul id="menulearn">
+                    <li>Help Center</li>
+                    <li>Blog</li>
+                    <li>Academy</li>
+                    <li>Guides</li>
+                    <li>Forums</li>
+                    <li>Free tools</li>
+                    <li>Podcasts</li>
+                    <li>Business encyclopedia</li>
+                </ul>
+                <button>Log in</button>
+                <button class="login">Start free trial</button>
+            </div>
+            <div class="btn-help">
+                <button>About</button>
+                <button>Careers</button>
+                <button>Press and Media</button>
+                <button class="squad">Shopify Plus<i class="fas fa-caret-right"></i></button>
+                <button>Sitemap</button>
+            </div>
+        </div>
+        <div class="over" id="myOver" onclick="closemenu()"></div>
+        <!-- end of menu -->
+        <section class="header center">
+            <nav>
+                <img src="img/shopify.png" width="30px" />
+                <i class="head">shopify</i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <h3 class="green">Build your business</h3>
+            <p>You've got the will. We've got the way.</p>
+            <input type="text" value="Enter your email address">
+            <button>Start free trial</button>
+            <p class="content fuzzy">Due to the impact of COVID-19, Shopify is offering an extended 90-day
+                free trial. By entering your email, you agree to receive marketing
+                emails from Shopify.</p>
+            <div class="pic-nav">
+                <img src="img/nav1.jpg" alt="" width="95%">
+                <img src="img/nav2.jpg" alt="" width="45%" height="80%">
+                <img src="img/nav3.jpg" alt="" width="45%" height="100%">
+            </div>
+        </section>
+        <div class="title center">
+            <h2>With you from first sale to full scale</h2>
+            <p class="fuzzy">One platfrom with all the ecommerce and point of sale features you need
+                to start, run, and grow your business.</p>
+        </div>
+        <section class="service">
+            <div>
+                <h2 class="green">Start —</h2>
+                <h2>your business journey</h2>
+                <p class="fuzzy">Find a business name, buy a domain, and create a brand with our free tools.</p>
+                <h4 class="green">Explore tools to start your business ➔</h4>
+                <img class="center" src="img/start.jpeg" alt="">
+            </div>
+            <div>
+                <h2 class="green">Sell —</h2>
+                <h2>everywhere</h2>
+                <p class="fuzzy">Use one platfrom to sell products to anyone, anywhere online with your ecommerce store,
+                    online marketplaces, and social media, and in-person with point of sale.</p>
+                <h4 class="green">Explore ways to sell ➔</h4>
+                <div class="slide">
+                    <button class="back" onclick="plusSlides(-1)"><i class="fas fa-caret-left"></i></button>
+                    <img class="myPicture center" src="img/sell.png" alt="">
+                    <img class="myPicture center" src="img/start.jpeg" alt="">
+                    <img class="myPicture center" src="img/market1.jpg" alt="">
+                    <img class="myPicture center" src="img/sell1.jpg" alt="">
+                    <button class="next" onclick="plusSlides(1)"><i class="fas fa-caret-right"></i></button>
+                </div>
+            </div>
+            <div>
+                <h2 class="green">Market —</h2>
+                <h2>your business</h2>
+                <p class="fuzzy">Take the guesswork out of marketing with build- in tools that help you create, execute,
+                    and analyze campaigns on Facebook and Google.</p>
+                <h4 class="green">Explore how to market your besiness ➔</h4>
+                <div class="stacks">
+                    <img class="one center" src="img/market3.jpg" alt="">
+                    <img class="two center" src="img/market.jpg" alt="">
+                    <img class="three center" src="img/market2.png" alt="">
+                </div>
+            </div>
+            <div>
+                <h2 class="green">Manage —</h2>
+                <h2>everything</h2>
+                <p class="fuzzy">Use a single dashboard to manage orders, shipping, and payments anywhere you go.
+                    Gain the insights and knowledge you need to grow.</p>
+                <h4 class="green">Explore how to manage your besiness ➔</h4>
+                <img class="center" src="img/manage.png" alt="">
+            </div>
+        </section>
+        <section class="help center">
+            <div>
+                <img src="img/support.jpg" alt="">
+                <h3>Award-winning support</h3>
+                <p class="fuzzy">Get the help you need, day or night, 24/7.</p>
+                <h4 class="green">Contact support ➔</h4>
+            </div>
+            <div>
+                <img src="img/appstore.jpg" alt="">
+                <h3>Shopify App Store</h3>
+                <p class="fuzzy">Add features and functionality to your business with 3,
+                    200+ apps that integrate directly with Shopify.</p>
+                <h3 class="green">Visit the Shopify App Store ➔</h4>
+            </div>
+            <div>
+                <img src="img/exferts.jpg" alt="">
+                <h3>Shopify Experts</h3>
+                <p class="fuzzy">Hire a Shopify Expert to help you with everything from store setup to SEO.</p>
+                <h4 class="green">Explore Shopify Experts ➔</h4>
+            </div>
+        </section>
+        <section class="startup">
+            <h2 class="green">Empowering independent business owners everywhere</h2>
+            <p>Over <b>1,000,000 businesses</b> in <b>175 countries</b> have made more than <b>$155 billion USD</b>
+                in sales on Shopify.</p>
+            <h4 class="green">Learn more about Shopify ➔</h4>
+            <img class="center" src="img/earth.png" alt="">
+            <p class="fuzzy">The orders in this map do not reflect live results, but are generated from a simulation of
+                the last
+                reported quarter’s orders.</p>
+        </section>
+        <section class="footer center">
+            <div class="top">
+                <img class="avatar" src="img/ccclose.jpg" alt="">
+                <h3>“We’ve been able to build something in 3 years that a lot of brands haven’t actually gotten to in 10
+                    years.”</h3>
+                <img src="img/logocloset.jpg" alt="">
+                <p>Chioma | Cee Cee’s Closet NYC</p>
+                <button><i class="fas fa-caret-right"></i>
+                    <p>Play Chioma and Uchenna's story</p>
+                </button>
+            </div>
+            <div class="mid">
+                <img src="img/cclose1.jpg" alt="">
+                <img src="img/nalata.jpg" alt="">
+                <img src="img/kirrin.jpg" alt="">
+                <img src="img/tokyobike.jpg" alt="">
+                <img src="img/meso.jpg" alt="">
+                <img src="img/cocoand.jpg" alt="">
+                <img src="img/museum.jpg" alt="">
+                <img src="img/adore.jpg" alt="">
+            </div>
+            <div class="bot">
+                <h2>Start your business journey with Shopify</h2>
+                <p>Try Shopify for free, and explore all the tools and services you need to start, run, and grow your
+                    business.</p>
+                <button>Start free trial</button>
+            </div>
+        </section>
+    </div>
+    <script src="shop.js"></script>
+</body>
+
+</html>

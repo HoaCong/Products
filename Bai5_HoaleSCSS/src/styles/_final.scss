@@ -1,0 +1,25 @@
+.final {
+  @include display-flex("", wrap, space-between, "");
+  .johannes {
+    .network {
+      div {
+        @include logowidth(30px, 30px, 30px, 15px, 15px);
+      }
+    }
+  }
+  @include Responsive(zero) {
+    .johannes {
+      width: 100%;
+    }
+  }
+  @include Responsive(SM) {
+    .johannes {
+      width: 49%;
+    }
+  }
+  @include Responsive(XL) {
+    .johannes {
+      width: 24%;
+    }
+  }
+}
